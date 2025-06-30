@@ -56,27 +56,3 @@ for metric in similarity_metrics:
     print(f"{metric} similarity (Morgan): {similarity}")
 
 ```
-
-## Publishing to PyPI
-
-To publish this library to PyPI, you'll need to have `build` and `twine` installed:
-
-```bash
-pip install build twine
-```
-
-1.  **Build the package:**
-
-    ```bash
-    python -m build
-    ```
-
-    This will create a `dist` directory containing the build artifacts.
-
-2.  **Upload to PyPI:**
-
-    ```bash
-    twine upload dist/*
-    ```
-
-    You will be prompted for your PyPI username and password.
